@@ -14,6 +14,7 @@ func FindByIdClient(id string) interface{} {
 
 	mongodb := pkg.MongoDB{
 		SettingLog: true,
+		Panic:      false,
 	}
 
 	mongodb.Connect()
